@@ -34,7 +34,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency %q<activesupport>, version_string
   s.add_runtime_dependency %q<actionpack>,    version_string
   s.add_runtime_dependency %q<railties>,      version_string
-  %w[core expectations mocks support].each do |name|
+  %w[core expectations support].each do |name|
     if RSpec::Rails::Version::STRING =~ /[a-zA-Z]+/ # prerelease builds
       s.add_runtime_dependency "rspec-#{name}", "= #{RSpec::Rails::Version::STRING}"
     else
